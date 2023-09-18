@@ -1,4 +1,4 @@
-FROM sonarsource/sonar-scanner-cli:5.0
+FROM ${CACHE_DOCKER_REGISTRY_URL}${CACHE_DOCKER_REGISTRY_PROXY_PROJECT}sonarsource/sonar-scanner-cli:5.0
 
 LABEL version="0.0.1" \
       repository="https://github.com/sonarsource/sonarcloud-github-action" \
