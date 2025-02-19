@@ -1,6 +1,9 @@
+<<<<<<< HEAD
 ARG CACHE_DOCKER_REGISTRY_URL="harbor.tech.padam.io:443/"
 ARG CACHE_DOCKER_REGISTRY_PROXY_PROJECT="library/"
 
+=======
+>>>>>>> 0f7db25 (fix dockerfile)
 FROM ${CACHE_DOCKER_REGISTRY_URL}${CACHE_DOCKER_REGISTRY_PROXY_PROJECT}sonarsource/sonar-scanner-cli:5.0
 
 LABEL version="0.0.1" \
