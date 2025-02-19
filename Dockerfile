@@ -1,23 +1,6 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 1656898 (Update harbor url)
 ARG CACHE_DOCKER_REGISTRY_URL="harbor.tech.padam.io:443/"
 ARG CACHE_DOCKER_REGISTRY_PROXY_PROJECT="library/"
 
-=======
->>>>>>> 0f7db25 (fix dockerfile)
-=======
-ARG CACHE_DOCKER_REGISTRY_URL
-ARG CACHE_DOCKER_REGISTRY_PROXY_PROJECT
-=======
-ARG CACHE_DOCKER_REGISTRY_URL="harbor.harbor:80/"
-ARG CACHE_DOCKER_REGISTRY_PROXY_PROJECT="library/"
->>>>>>> c241aa3 (Permit usage of CACHE_DOCKER_REGISTRY_URL)
-
->>>>>>> 8afd7b3 (Update Dockerfile)
 FROM ${CACHE_DOCKER_REGISTRY_URL}${CACHE_DOCKER_REGISTRY_PROXY_PROJECT}sonarsource/sonar-scanner-cli:5.0
 
 LABEL version="0.0.1" \
